@@ -21,5 +21,3 @@ function checkLang() {
   };
 
 }
-console.log(langs);
-console.log(buttons);
