@@ -1,0 +1,20 @@
+.top-scorers-list {
+    margin-bottom: 20px;
+ }
+ .top-scorer {
+     list-style-type: none;
+     display: block;
+ }
+ 
+ .add-nick-form {
+ text-align: center;
+ }
+ 
+ #nickname {
+ text-align: center;
+ padding: 5px;
+ margin-bottom: 10px;
+ }
+ #add-nickname{
+     width: 100%;
+ }
