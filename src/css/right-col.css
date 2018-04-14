@@ -3,20 +3,25 @@
     margin-bottom: 10px;
     justify-content: center;
 }
+
 .widget-heading {
     margin-bottom: 10px;
 }
+
 .lang-ctrls-btn {
     margin-right: 1%;
     width: 25%;
 }
+
 .lang-ctrls-btn:last-child {
     margin-right: 0px;
 }
+
 .insert-text,
 .results {
     margin: 20px 0px;
 }
+
 .insert-text-btn,
 .start-btn {
     margin: 0 auto;

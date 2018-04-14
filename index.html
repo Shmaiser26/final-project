@@ -1,84 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Key-trainer</title>
-        <link
-            href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700&amp;subset=cyrillic,cyrillic-ext"
-            rel="stylesheet">
-        <link href="src/css/main.css" rel="stylesheet">
-        <link rel="shortcut icon" href="favicon.png" type="image/png">
-    </head>
-    <body>
-        <aside class="left-col block">
-            <h2 class="top-scorer-heading">Top scores</h2>
-            <ul class="top-scorers-list">
-                <li class="top-scorer">
-                    <span class="first-pos">Aaaaa :
-                    </span><span id="first-res">100</span>
-                </li>
-                <li class="top-scorer">
-                    <span class="second-pos">Bbbbb :
-                    </span><span id="second-res">100</li>
-                    <li class="top-scorer">
-                        <span class="third-pos">Cccccc :
-                        </span><span id="third-res">100</li>
-                        <li class="top-scorer">
-                            <span class="fourth-pos">Ddddd :
-                            </span><span id="fourth-res">100</li>
-                            <li class="top-scorer">
-                                <span class="fifth-pos">Sssss :
-                                </span><span id="fifth-res">100</li>
-                            </ul>
-                            <form class="add-nick-form">
-                                <input type="text" id="nickname" placeholder="enter nickname">
-                                <button class="add-btn btn" id="add-nickname">add nickname</button>
 
-                            </form>
-                        </aside>
-                        <main>
-                            <h1>Press start button to start</h1>
-                            <div class="test-string block"></div>
-                            <div class="keyboard block">
-                                <div class="row" id="first-row"></div>
-                                <div class="row" id="second-row"></div>
-                                <div class="row" id="third-row"></div>
-                                <div class="row" id="space"></div>
-                            </div>
-                        </main>
-                        <aside class="right-col block">
-                            <section div="div" class="lang-ctrls">
-                                <h2 class="widget-heading">Keyboard language</h2>
-                                <div class="lang-ctrls-body">
-                                    <button class="lang-ctrls-btn btn">en</button>
-                                    <button class="lang-ctrls-btn btn">ru</button>
-                                    <button class="lang-ctrls-btn btn">ua</button>
-                                </div>
-                            </section>
-                            <section class="insert-text">
-                                <input type="submit" class="insert-text-btn btn" value="Insert text">
-                            </section>
-                            <section class="timer">
-                                <h2>Elapsed Time</h2>
-                                <div class="timer-display"></div>
-                            </section>
-                            <section class="results">
-                                <h2 class="widget-heading">results</h2>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Key-trainer</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link href="src/css/main.css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+</head>
 
-                                <h3>typing Speed</h3>
-                                <div class="speed-display">
-                                    <p class="speed-display-js"></div>
-                                    <p>sign-min</p>
-                                </div>
-                                <div class="errors">
-                                    <h3>Total errors</h3>
-                                    <p class="errors-display-js"></p>
-                                </div>
-                            </section>
-                            <button class="start-btn btn">Start typing</button>
-                        </aside>
-                        <script src="./dist/bundle.js"></script>
-                    </body>
-                </html>
+<body>
+    <!--left part-->
+    <aside class="left-col block">
+        <h2 class="top-scorer-heading">Top scores</h2>
+        <ul class="top-scorers-list">
+            <li class="top-scorer">
+                <span class="first-pos">Aaaaa :
+                </span>
+                <span id="first-res">100</span>
+            </li>
+            <li class="top-scorer">
+                <span class="second-pos">Bbbbb :
+                </span>
+                <span id="second-res">100</li>
+            <li class="top-scorer">
+                <span class="third-pos">Cccccc :
+                </span>
+                <span id="third-res">100</li>
+            <li class="top-scorer">
+                <span class="fourth-pos">Ddddd :
+                </span>
+                <span id="fourth-res">100</li>
+            <li class="top-scorer">
+                <span class="fifth-pos">Sssss :
+                </span>
+                <span id="fifth-res">100</li>
+        </ul>
+        <form class="add-nick-form">
+            <input type="text" id="nickname" placeholder="enter nickname">
+            <button class="add-btn btn" id="add-nickname">add nickname</button>
+
+        </form>
+    </aside>
+    <!--center part-->
+    <main>
+        <h1>Press start button to start</h1>
+        <div class="test-string block"></div>
+        <div class="keyboard block">
+            <div class="row" id="first-row"></div>
+            <div class="row" id="second-row"></div>
+            <div class="row" id="third-row"></div>
+            <div class="row" id="space"></div>
+        </div>
+    </main>
+    <!--right part-->
+    <aside class="right-col block">
+        <section div="div" class="lang-ctrls">
+            <h2 class="widget-heading">Keyboard language</h2>
+            <div class="lang-ctrls-body">
+                <button class="lang-ctrls-btn btn">en</button>
+                <button class="lang-ctrls-btn btn">ru</button>
+                <button class="lang-ctrls-btn btn">ua</button>
+            </div>
+        </section>
+        <section class="insert-text">
+            <input type="submit" class="insert-text-btn btn" value="Insert text">
+        </section>
+        <section class="timer">
+            <h2>Elapsed Time</h2>
+            <div class="timer-display"></div>
+        </section>
+        <section class="results">
+            <h2 class="widget-heading">results</h2>
+
+            <h3>typing Speed</h3>
+            <div class="speed-display">
+                <p class="speed-display-js">
+            </div>
+            <p>sign-min</p>
+            </div>
+            <div class="errors">
+                <h3>Total errors</h3>
+                <p class="errors-display-js"></p>
+            </div>
+        </section>
+        <button class="start-btn btn">Start typing</button>
+    </aside>
+    <script src="./dist/bundle.js"></script>
+</body>
+
+</html>
