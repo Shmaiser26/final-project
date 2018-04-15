@@ -1,4 +1,5 @@
-import" ./js/setActive";
+import "./js/keyboard";
+import "./js/setActive";
 import "./js/createKeyboard";
 /*
   Add code above this comment

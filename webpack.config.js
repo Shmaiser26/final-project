@@ -9,7 +9,7 @@ const isProduction = !isDevelopment;
 const distPath = path.join(__dirname, '/public');
 
 const extractSass = new ExtractTextPlugin({
-  filename: '[name].css',
+  filename: 'src/css/style.scss',
   disable: isDevelopment
 });
 

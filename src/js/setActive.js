@@ -18,6 +18,8 @@ function checkLang() {
       buttons,
       el => (el.textContent === res ? el.classList.add("btn-active") : false)
     );
+  } else {
+    localStorage.setItem("lang", "en");
   }
 }
 document.addEventListener("DOMContentLoaded", checkLang);
