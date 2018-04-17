@@ -1,3 +1,5 @@
+import {setActiveKeys} from "./setActiveKeys";
+
 function addKeyboardLayout(arr) {
   const makeArr = [...arr];
   const keyboard = new Array();
@@ -28,9 +30,6 @@ const keyboard = {
       middleRow: uaAlphabet[1],
       bottomRow: uaAlphabet[2]
     }
-  },
-  langs: ["en", "ru", "ua"],
-  currentLang: localStorage.getItem("lang")
+  }
 };
-
 export {keyboard};

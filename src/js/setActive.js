@@ -1,3 +1,6 @@
+import {createKeyboard, keyboardBody, firstRow, secondRow, thirdRow, spaceBtn} from "./createKeyboard";
+import { keyboard } from "./keyboard";
+import "./../sass/style.scss";
 const langs = document.querySelector(".lang-ctrls-body");
 const buttons = Array.from(document.querySelectorAll(".lang-ctrls-btn"));
 const active = {
@@ -9,20 +12,10 @@ function setActive(event) {
   event.target.classList.add("btn-active");
   active.lang = event.target.textContent;
   localStorage.setItem("lang", active.lang);
+  createKeyboard();
 }
 
-function checkLang() {
-  if (localStorage.getItem("lang")) {
-    const res = localStorage.getItem("lang");
-    Array.from(
-      buttons,
-      el => (el.textContent === res ? el.classList.add("btn-active") : false)
-    );
-  } else {
-    localStorage.setItem("lang", "en");
-  }
-}
-document.addEventListener("DOMContentLoaded", checkLang);
 langs.addEventListener("click", setActive);
+export {buttons};
 
-console.log("fuck");
+

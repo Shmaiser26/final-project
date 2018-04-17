@@ -21,3 +21,8 @@
 .keyboard-btn-active {
   background-color: #dce2e8;
 }
+
+.result-string {
+  font-size: 18px;
+color: #212f3f;
+}
